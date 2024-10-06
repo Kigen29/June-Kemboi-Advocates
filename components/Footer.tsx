@@ -12,7 +12,7 @@ import { MapComponent } from "./map";
 
 export default function Footer() {
   return (
-    <section className="gap-10 bg-[#800000] px-5 py-6 flex w-full mt-2 m-auto flex-row justify-between">
+    <section className="gap-10 bg-[#800000] px-5 py-6 flex w-full mt-2 m-auto flex-row space-x-48">
       <div className="flex gap-10 flex-col">
         <div className="flex flex-row gap-10">
           <Image
@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex flex-col ml-48 ">
+      <div className="flex flex-col">
         <div className="gap-10">
           <div className="flex flex-row gap-10">
             <Image
@@ -83,7 +83,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex flex-col ml-48">
+      <div className="flex flex-col">
         <MapProvider>
           <MapComponent />
         </MapProvider>

@@ -12,39 +12,39 @@ import { MapComponent } from "./map";
 
 export default function Footer() {
   return (
-    <section className="gap-10 bg-[#800000] px-10 py-12 flex w-full mt-2 max-w-[full] m-auto flex-row">
+    <section className="gap-10 bg-[#800000] px-5 py-6 flex w-full mt-2 m-auto flex-row justify-between">
       <div className="flex gap-10 flex-col">
         <div className="flex flex-row gap-10">
           <Image
             src={linkedin}
             alt="Description of the image"
-            width={50}
-            height={50}
+            width={30}
+            height={30}
           />
 
           <Image
             src={twitter}
             alt="Description of the image"
-            width={50}
-            height={50}
+            width={30}
+            height={30}
           />
 
           <Image
             src={facebook}
             alt="Description of the image"
-            width={50}
-            height={50}
+            width={30}
+            height={30}
           />
 
           <Image
             src={instagram}
             alt="Description of the image"
-            width={50}
-            height={50}
+            width={30}
+            height={30}
           />
         </div>
         <div>
-          <p className="text-white text-2xl">
+          <p className="text-white text-lg">
             Injustice anywhere is a <br />
             threat to justice everywhere
           </p>
@@ -53,8 +53,8 @@ export default function Footer() {
           <Image
             src={logo}
             alt="Description of the image"
-            width={300}
-            height={100}
+            width={200}
+            height={50}
           />
         </div>
       </div>

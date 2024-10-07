@@ -12,7 +12,7 @@ import { MapComponent } from "./map";
 
 export default function Footer() {
   return (
-    <section className="gap-10 bg-[#800000] px-5 py-6 flex w-full mt-2 m-auto flex-row space-x-48 border-2 border-black">
+    <section className="gap-10 bg-[#800000] px-5 py-6 flex w-full m-auto flex-row space-x-48 border-2 border-black">
       <div className="flex gap-10 flex-col">
         <div className="flex flex-row gap-10">
           <Image

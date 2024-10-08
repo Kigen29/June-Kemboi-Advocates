@@ -25,18 +25,18 @@ export default function Navbar() {
             >
               <ul className="lg:flex lg:space-x-8 text-black mt-4 lg:mt-0">
                 {[
-                  "Home",
-                  "About Us",
-                  "Our Team",
-                  "Practice Areas",
-                  "Contact",
-                ].map((item) => (
-                  <li key={item}>
+                     { name: "Home", href: "/" },
+                     { name: "About Us", href: "/about" },
+                     { name: "Our Team", href: "/team" },
+                     { name: "Practice Areas", href: "/practice-areas" },
+                     { name: "Contact", href: "/contact" },
+                ].map((item,index) => (
+                  <li key={index}>
                     <Link
-                      href={`#${item.toLowerCase()}`}
+                      href={item.href}
                       className="block py-2 px-3 rounded hover:bg-[#800000] lg:hover:bg-transparent lg:hover:text-[#800000] relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#800000] after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:duration-300"
                     >
-                      {item}
+                      {item.name}
                     </Link>
                   </li>
                 ))}

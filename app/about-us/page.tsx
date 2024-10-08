@@ -1,11 +1,13 @@
 import React from "react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const AboutUs = () => {
   return (
-    <div>
-      <h1>About Us</h1>
-      <p>Details about your law firm...</p>
-    </div>
+   <>
+   <Navbar/>
+   <Footer/>
+   </>
   );
 };
 

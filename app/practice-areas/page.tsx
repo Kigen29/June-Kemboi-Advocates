@@ -14,6 +14,7 @@ import criminal from "@/components/images/Criminal.png";
 import family from "@/components/images/Family.png";
 import corporate from "@/components/images/Corporate.png";
 
+
 const serviceData = [
   {
     id: 1,
@@ -64,7 +65,7 @@ const Practice = () => {
           </h1>
         </div>
       </div>
-      
+
       <div className="mt-10 mx-5">
         <Breadcrumb>
           <BreadcrumbList>

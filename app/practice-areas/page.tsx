@@ -97,7 +97,7 @@ const Practice = () => {
 
       <div className="mt-5 mx-5">
         <h3 className="text-2xl font-bold underline underline-offset-4 decoration-4">
-          Overview
+          Our Services
         </h3>
       </div>
 

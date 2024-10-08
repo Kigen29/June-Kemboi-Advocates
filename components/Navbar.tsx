@@ -26,7 +26,7 @@ export default function Navbar() {
               <ul className="lg:flex lg:space-x-8 text-black mt-4 lg:mt-0">
                 {[
                      { name: "Home", href: "/" },
-                     { name: "About Us", href: "/about-us" },
+                     { name: "About Us", href: "/about" },
                      { name: "Our Team", href: "/team" },
                      { name: "Practice Areas", href: "/practice-areas" },
                      { name: "Contact", href: "/contact" },

@@ -44,8 +44,8 @@ export default function Home() {
               Services
             </p>
             <div className="mt-10">
-            <Link href="/contact">
-              <PrimaryButton>Contact Us Today</PrimaryButton>
+              <Link href="/contact">
+                <PrimaryButton>Contact Us Today</PrimaryButton>
               </Link>
             </div>
           </div>
@@ -88,8 +88,8 @@ export default function Home() {
                 on achieving the best results for our clients.
               </p>
               <div className="mt-10">
-              <Link href="/about-us">
-                <PrimaryButton>Learn More</PrimaryButton>
+                <Link href="/about-us">
+                  <PrimaryButton>Learn More</PrimaryButton>
                 </Link>
               </div>
             </div>

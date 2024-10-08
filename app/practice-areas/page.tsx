@@ -57,15 +57,15 @@ const Practice = () => {
   return (
     <>
       <Navbar />
-      <div className="relative bg-[url('/Background.png')] bg-cover bg-center h-[60vh] content-center">
-        <div className="absolute inset-0"></div>
-        <div className="relative flex justify-center">
+      <div className="bg-[url('/Background.png')] bg-cover bg-center h-[50vh] content-center">
+        <div className="flex justify-center">
           <h1 className="text-[#FFFFFF] text-5xl">
             PRACTICE <span className="text-[#EFB34E]">AREAS</span>
           </h1>
         </div>
       </div>
-      <div className="mt-5 mx-5">
+      
+      <div className="mt-10 mx-5">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

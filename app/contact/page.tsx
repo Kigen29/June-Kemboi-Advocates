@@ -83,7 +83,7 @@ const Contact = () => {
     <>
       <Navbar />
 
-      <div className="bg-[url('/backdrop.png')] bg-cover bg-center h-[50vh] content-center">
+      <div className="bg-[url('/Background.png')] bg-cover bg-center h-[50vh] content-center">
         <div className="flex justify-center">
           <h1 className="text-[#FFFFFF] text-5xl">
             CONTACT <span className="text-[#EFB34E]">US</span>

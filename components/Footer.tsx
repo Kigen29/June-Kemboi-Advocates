@@ -14,12 +14,13 @@ export default function Footer() {
   return (
     <section className="gap-10 bg-[#800000] px-5 py-6 flex w-full m-auto flex-row space-x-48 border-2 border-black">
       <div className="flex gap-10 flex-col">
-        <div className="flex flex-row gap-10">
+        <div className="flex flex-row gap-10 ">
           <Image
             src={linkedin}
             alt="Description of the image"
             width={30}
             height={30}
+            className="transform transition duration-300 hover:scale-110 hover:-translate-y-1"
           />
 
           <Image
@@ -27,6 +28,7 @@ export default function Footer() {
             alt="Description of the image"
             width={30}
             height={30}
+            className="transform transition duration-300 hover:scale-110 hover:-translate-y-1"
           />
 
           <Image
@@ -34,6 +36,7 @@ export default function Footer() {
             alt="Description of the image"
             width={30}
             height={30}
+            className="transform transition duration-300 hover:scale-110 hover:-translate-y-1"
           />
 
           <Image
@@ -41,6 +44,7 @@ export default function Footer() {
             alt="Description of the image"
             width={30}
             height={30}
+            className="transform transition duration-300 hover:scale-110 hover:-translate-y-1"
           />
         </div>
         <div>
@@ -68,7 +72,15 @@ export default function Footer() {
               width={30}
               height={30}
             />
-            <p className="text-lg text-white">junekemboiadvocates@gmail.com</p>
+            <a
+              rel="noopener noreferrer"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=junekemboiadvocates@gmail.com"
+              target="_blank"
+            >
+              <p className="text-lg text-white transform transition duration-300 hover:scale-110 hover:-translate-y-1">
+                junekemboiadvocates@gmail.com
+              </p>
+            </a>
           </div>
 
           <div className="flex flex-row gap-10 mt-5">
@@ -78,7 +90,11 @@ export default function Footer() {
               width={30}
               height={30}
             />
-            <p className="text-lg text-white">+254 729 317008</p>
+            <a rel="noopener noreferrer" href="tel:+254729317008">
+              <p className="text-lg text-white transform transition duration-300 hover:scale-110 hover:-translate-y-1">
+                +254 729 317008
+              </p>
+            </a>
           </div>
         </div>
       </div>

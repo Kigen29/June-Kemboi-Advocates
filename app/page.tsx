@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import PrimaryButton from "@/components/PrimaryButton";
 import SecondaryButton from "@/components/SecondaryButton";
-import hero from "@/components/images/Hero Image.png";
+import hero from "@/components/images/Hero.png";
 import about from "@/components/images/About.png";
 import criminal from "@/components/images/Criminal.png";
 import family from "@/components/images/Family.png";
@@ -35,7 +35,7 @@ export default function Home() {
       <div>
         <Navbar />
         <section className="flex p-5">
-          <div className="flex flex-col gap-5 ml-24 mt-5">
+          <div className="flex flex-col gap-5 ml-24 mt-12">
             <h1 className="font-bold text-3xl">Your Trusted Legal Patner</h1>
             <p className="text-xl">
               Dedicated to Delivering Excellence in Legal
@@ -46,7 +46,7 @@ export default function Home() {
               <PrimaryButton>Contact Us Today</PrimaryButton>
             </div>
           </div>
-          <div className="ml-60">
+          <div className="ml-48 ">
             <Image
               src={hero}
               alt="Description of the image"
@@ -61,7 +61,7 @@ export default function Home() {
             <p className="text-xs flex justify-center">Know More About Us</p>
           </div>
           <div className="flex space-x-72 ">
-            <div className="ml-8 mt-5">
+            <div className="ml-8">
               <Image
                 src={about}
                 alt="Description of the image"

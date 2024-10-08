@@ -3,33 +3,29 @@ import Image from "next/image";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import PrimaryButton from "@/components/PrimaryButton";
+import SecondaryButton from "@/components/SecondaryButton";
 import hero from "@/components/images/Hero Image.png";
 import about from "@/components/images/About.png";
 import criminal from "@/components/images/Criminal.png";
 import family from "@/components/images/Family.png";
 import corporate from "@/components/images/Corporate.png";
-import { Card } from "@/components/ui/card";
 
 const serviceData = [
   {
     id: 1,
     image: criminal,
-    title: "Criminal Litigation",
   },
   {
     id: 2,
     image: family,
-    title: "Family Law",
   },
   {
     id: 3,
     image: corporate,
-    title: "Corporate Litigation",
   },
   {
     id: 4,
     image: corporate,
-    title: "Corporate Litigation",
   },
 ];
 
@@ -38,7 +34,7 @@ export default function Home() {
     <>
       <div>
         <Navbar />
-        <section className="flex border-2 p-5 border-black">
+        <section className="flex p-5">
           <div className="flex flex-col gap-5 ml-24 mt-5">
             <h1 className="font-bold text-3xl">Your Trusted Legal Patner</h1>
             <p className="text-xl">
@@ -59,7 +55,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="px-10 border-2 p-5 border-black">
+        <section className="px-10 p-5 bg-[#800000] bg-opacity-5">
           <div className="flex flex-col">
             <h1 className="font-bold text-2xl flex justify-center">About Us</h1>
             <p className="text-xs flex justify-center">Know More About Us</p>
@@ -94,7 +90,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="px-20 p-5 border-2 gap-20 border-black">
+        <section className="px-20 p-5 gap-20">
           <div className="flex flex-col">
             <h1 className="font-bold text-2xl flex justify-center">
               Practice Areas
@@ -103,40 +99,28 @@ export default function Home() {
               Know More About Our Services
             </p>
           </div>
-          <div className="flex mt-7 gap-20">
-            <div className="flex justify-between border-none">
-              {serviceData.map(({ id, image, title }) => (
+          <div className="flex  flex-col mt-7 gap-20">
+            <div className="flex border-none">
+              {serviceData.map(({ id, image }) => (
                 <div
                   key={id}
-                  className="md:basis-1/2 lg:basis-1/3 pl-10 border-none m-0"
+                  className="md:basis-1/2 lg:basis-1/3 pl-5 border-none m-0"
                 >
-                  <div className="p-3">
-                    <Card
-                      className="border-2 border-black rounded-4xl"
-                      style={{
-                        backgroundColor: "transparent",
-                        boxShadow: "10px 10px 20px rgba(0, 0, 0, 0.15)",
-                      }}
-                    >
-                      <div className="w-full">
-                        <Image
-                          src={image}
-                          alt="snow"
-                          className="flex size-60 p-3 "
-                        />
-                      </div>
-                      <div className="bg-white pt-12 pb-10 px-5 -mt-6 rounded-b-3xl">
-                        <div className="flex justify-center  gap-3">
-                          <p className="text-black text-lg pb-2 font-bold">{title}</p>
-                        </div>
-                        <div className="flex justify-center mt-2 ">
-                          <PrimaryButton>Learn More</PrimaryButton>
-                        </div>
-                      </div>
-                    </Card>
+                  <div className="w-full p-3 transform transition duration-300 hover:scale-110 hover:-translate-y-2">
+                    <Image
+                      src={image}
+                      alt="snow"
+                      className="flex"
+                      width={500}
+                      height={300}
+                    />
                   </div>
                 </div>
               ))}
+              
+            </div>
+            <div className="flex justify-center mb-7 transform transition duration-300 hover:scale-110 hover:-translate-y-1">
+                <SecondaryButton>Learn More</SecondaryButton>
             </div>
           </div>
         </section>

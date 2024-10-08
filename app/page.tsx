@@ -7,8 +7,9 @@ import SecondaryButton from "@/components/SecondaryButton";
 import hero from "@/components/images/Hero.png";
 import about from "@/components/images/About.png";
 import criminal from "@/components/images/Criminal.png";
-import family from "@/components/images/Family.png";
+import employment from "@/components/images/Employment.png";
 import corporate from "@/components/images/Corporate.png";
+import land from "@/components/images/Land.png";
 import Link from "next/link";
 
 const serviceData = [
@@ -19,7 +20,7 @@ const serviceData = [
   },
   {
     id: 2,
-    image: family,
+    image: employment,
     link: "/family-law",
   },
   {
@@ -29,7 +30,7 @@ const serviceData = [
   },
   {
     id: 4,
-    image: corporate,
+    image: land,
     link: "/corporate-law",
   },
 ];

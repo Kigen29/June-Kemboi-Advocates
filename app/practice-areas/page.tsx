@@ -13,7 +13,13 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import criminal from "@/components/images/Criminal.png";
 import family from "@/components/images/Family.png";
+import civil from "@/components/images/Civil.png";
+import children from "@/components/images/Children.png";
+import employment from "@/components/images/Employment.png";
+import land from "@/components/images/Land.png";
 import corporate from "@/components/images/Corporate.png";
+import data from "@/components/images/Data.png";
+import bankruptcy from "@/components/images/Bankruptcy.png";
 
 const serviceData = [
   {
@@ -33,32 +39,32 @@ const serviceData = [
   },
   {
     id: 4,
-    image: corporate,
+    image: employment,
     link: "/criminal-litigation",
   },
   {
     id: 5,
-    image: corporate,
+    image: children,
     link: "/criminal-litigation",
   },
   {
     id: 6,
-    image: corporate,
+    image: civil,
     link: "/criminal-litigation",
   },
   {
     id: 7,
-    image: corporate,
+    image: data,
     link: "/criminal-litigation",
   },
   {
     id: 8,
-    image: corporate,
+    image: land,
     link: "/criminal-litigation",
   },
   {
     id: 9,
-    image: corporate,
+    image: bankruptcy,
     link: "/criminal-litigation",
   },
 ];

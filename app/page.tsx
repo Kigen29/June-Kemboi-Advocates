@@ -15,18 +15,22 @@ const serviceData = [
   {
     id: 1,
     image: criminal,
+    link: "/criminal-litigation",
   },
   {
     id: 2,
     image: family,
+    link: "/family-law",
   },
   {
     id: 3,
     image: corporate,
+    link: "/corporate-law",
   },
   {
     id: 4,
     image: corporate,
+    link: "/corporate-law",
   },
 ];
 
@@ -106,20 +110,22 @@ export default function Home() {
           </div>
           <div className="flex  flex-col mt-7 gap-20">
             <div className="flex border-none">
-              {serviceData.map(({ id, image }) => (
+              {serviceData.map(({ id, image, link }) => (
                 <div
                   key={id}
                   className="md:basis-1/2 lg:basis-1/3 pl-5 border-none m-0"
                 >
-                  <div className="w-full p-3 transform transition duration-300 hover:scale-110 hover:-translate-y-2">
-                    <Image
-                      src={image}
-                      alt="snow"
-                      className="flex"
-                      width={500}
-                      height={300}
-                    />
-                  </div>
+                  <Link href={link}>
+                    <div className="w-full p-3 transform transition duration-300 hover:scale-110 hover:-translate-y-2">
+                      <Image
+                        src={image}
+                        alt="snow"
+                        className="flex"
+                        width={500}
+                        height={300}
+                      />
+                    </div>
+                  </Link>
                 </div>
               ))}
             </div>

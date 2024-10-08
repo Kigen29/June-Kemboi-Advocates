@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -14,43 +15,51 @@ import criminal from "@/components/images/Criminal.png";
 import family from "@/components/images/Family.png";
 import corporate from "@/components/images/Corporate.png";
 
-
 const serviceData = [
   {
     id: 1,
     image: criminal,
+    link: "/criminal-litigation",
   },
   {
     id: 2,
     image: family,
+    link: "/criminal-litigation",
   },
   {
     id: 3,
     image: corporate,
+    link: "/criminal-litigation",
   },
   {
     id: 4,
     image: corporate,
+    link: "/criminal-litigation",
   },
   {
     id: 5,
     image: corporate,
+    link: "/criminal-litigation",
   },
   {
     id: 6,
     image: corporate,
+    link: "/criminal-litigation",
   },
   {
     id: 7,
     image: corporate,
+    link: "/criminal-litigation",
   },
   {
     id: 8,
     image: corporate,
+    link: "/criminal-litigation",
   },
   {
     id: 9,
     image: corporate,
+    link: "/criminal-litigation",
   },
 ];
 
@@ -88,17 +97,19 @@ const Practice = () => {
 
       <section className="px-20 p-5 gap-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-7">
-          {serviceData.map(({ id, image }) => (
+          {serviceData.map(({ id, image, link }) => (
             <div key={id} className="border-none m-0">
-              <div className="w-full p-3 transform transition duration-300 hover:scale-110 hover:-translate-y-2">
-                <Image
-                  src={image}
-                  alt="service"
-                  className="flex"
-                  width={500}
-                  height={200}
-                />
-              </div>
+              <Link href={link}>
+                <div className="w-full p-3 transform transition duration-300 hover:scale-110 hover:-translate-y-2">
+                  <Image
+                    src={image}
+                    alt="service"
+                    className="flex"
+                    width={500}
+                    height={200}
+                  />
+                </div>
+              </Link>
             </div>
           ))}
         </div>

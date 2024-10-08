@@ -65,7 +65,7 @@ const Criminal = () => {
             </BreadcrumbItem>
             <DividerVerticalIcon />
             <BreadcrumbItem>
-              <BreadcrumbLink href="/">Practice Areas</BreadcrumbLink>
+              <BreadcrumbLink href="/practice-areas">Practice Areas</BreadcrumbLink>
             </BreadcrumbItem>
             <DividerVerticalIcon />
             <BreadcrumbItem>

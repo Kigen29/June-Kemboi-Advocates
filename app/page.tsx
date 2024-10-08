@@ -9,6 +9,7 @@ import about from "@/components/images/About.png";
 import criminal from "@/components/images/Criminal.png";
 import family from "@/components/images/Family.png";
 import corporate from "@/components/images/Corporate.png";
+import Link from "next/link";
 
 const serviceData = [
   {
@@ -43,7 +44,9 @@ export default function Home() {
               Services
             </p>
             <div className="mt-10">
+            <Link href="/contact">
               <PrimaryButton>Contact Us Today</PrimaryButton>
+              </Link>
             </div>
           </div>
           <div className="ml-48 ">
@@ -85,7 +88,9 @@ export default function Home() {
                 on achieving the best results for our clients.
               </p>
               <div className="mt-10">
+              <Link href="/about-us">
                 <PrimaryButton>Learn More</PrimaryButton>
+                </Link>
               </div>
             </div>
           </div>
@@ -117,10 +122,11 @@ export default function Home() {
                   </div>
                 </div>
               ))}
-              
             </div>
             <div className="flex justify-center mb-7 transform transition duration-300 hover:scale-110 hover:-translate-y-1">
+              <Link href="/practice-areas">
                 <SecondaryButton>Learn More</SecondaryButton>
+              </Link>
             </div>
           </div>
         </section>

@@ -65,7 +65,7 @@ const serviceData = [
   {
     id: 9,
     image: bankruptcy,
-    link: "/criminal-litigation",
+    link: "/bankruptcy",
   },
 ];
 

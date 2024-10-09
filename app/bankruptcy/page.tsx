@@ -14,31 +14,31 @@ import { IoMdCheckboxOutline } from "react-icons/io";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const Civil = () => {
+const Bank = () => {
   const reasons = [
     {
       id: 1,
-      title: "Contract Disputes:",
+      title: "Insolvency Advice & Filing:",
       description:
-        "We represent businesses in contractual disputes, ensuring that your rights and interests are upheld throughout the legal process.",
+        "We provide comprehensive advice on bankruptcy and insolvency matters, assisting clients in filing for bankruptcy or alternative debt relief options.",
     },
     {
       id: 2,
-      title: "Tort Claims:",
+      title: "Debt Restructuring & Negotiation:",
       description:
-        "We handle civil wrongs such as defamation, negligence, and property disputes, advocating for compensation and justice for our clients.",
+        "We help clients restructure their debts through negotiations with creditors, aiming to reach workable payment plans and settlements.",
     },
     {
       id: 3,
-      title: "Debt Recovery & Enforcement:",
+      title: "Liquidation & Asset Protection:",
       description:
-        "We assist in recovering debts and enforcing judgments, using legal avenues to ensure financial remedies.",
+        "We guide clients through the liquidation process, ensuring fair treatment of assets and maximizing protection for their financial future.",
     },
     {
       id: 4,
-      title: "Injunctions & Remedies:",
+      title: "Bankruptcy Litigation & Defense:",
       description:
-        "We apply for injunctions and other legal remedies to protect our clients’ rights and interests.",
+        "We represent clients in bankruptcy-related litigation, defending their rights and interests throughout the process.",
     },
   ];
 
@@ -50,7 +50,7 @@ const Civil = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative flex justify-center">
           <h1 className="text-[#FFFFFF] text-5xl">
-            CIVIL <span className="text-[#EFB34E]">LITIGATION</span>
+            <span className="text-[#EFB34E]">BANKRUPTCY</span>
           </h1>
         </div>
       </div>
@@ -69,7 +69,7 @@ const Civil = () => {
             </BreadcrumbItem>
             <DividerVerticalIcon />
             <BreadcrumbItem>
-              <BreadcrumbPage>Civil Litigation</BreadcrumbPage>
+              <BreadcrumbPage>Bankruptcy</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
@@ -87,12 +87,13 @@ const Civil = () => {
           <span className="font-bold text- text-[#800000]">
             June Kemboi Advocates
           </span>
-          , we provide a wide range of Civil Litigation services, representing
-          clients in non-criminal disputes to achieve fair resolutions through
-          negotiation or courtroom advocacy.
+          , we offer expert Bankruptcy services, helping individuals and
+          businesses navigate the legal complexities of insolvency and debt
+          relief. We provide practical advice and solutions for financial
+          recovery.
         </p>
 
-        <p className="mt-10">Our Civil Litigation Services include:</p>
+        <p className="mt-10">Our Bankruptcy Services include:</p>
 
         {reasons.map((reason) => (
           <div
@@ -113,15 +114,11 @@ const Civil = () => {
 
         <div className="mt-5 mb-10">
           <p>
-            Our team provides{" "}
-            <span className="text-[#800000] font-bold">strategic</span>{" "}
-            and{" "}
-            <span className="text-[#800000] font-bold">tenacious</span>{" "}
-            representation to achieve the
-            <span className="text-[#EFB34E] font-bold">{" "}
-            best
-            </span>{" "}
-            possible outcomes for our clients.
+          Our legal team is dedicated to helping clients achieve{" "}
+            <span className="text-[#800000] font-bold">financial stability</span> and{" "}
+            navigate the bankruptcy process with{" "}
+            <span className="text-[#EFB34E] font-bold"> confidence.</span>
+            
           </p>
         </div>
       </div>
@@ -131,4 +128,4 @@ const Civil = () => {
   );
 };
 
-export default Civil;
+export default Bank;

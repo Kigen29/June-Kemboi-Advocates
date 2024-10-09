@@ -40,7 +40,7 @@ const serviceData = [
   {
     id: 4,
     image: employment,
-    link: "/criminal-litigation",
+    link: "/employment-law",
   },
   {
     id: 5,

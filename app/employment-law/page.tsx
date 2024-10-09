@@ -14,31 +14,31 @@ import { IoMdCheckboxOutline } from "react-icons/io";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const Corporate = () => {
+const Employment = () => {
   const reasons = [
     {
       id: 1,
-      title: "Contract Disputes:",
+      title: "Wrongful Termination & Unfair Dismissal:",
       description:
-        "We represent businesses in contractual disputes, ensuring that your rights and interests are upheld throughout the legal process.",
+        "We represent clients in cases of unfair dismissal, ensuring that employment rights are upheld, and just outcomes are achieved.",
     },
     {
       id: 2,
-      title: "Shareholder & Partnership Disputes:",
+      title: "Workplace Harassment & Discrimination:",
       description:
-        "We provide legal support for resolving internal disputes between shareholders and business partners, protecting both individual and corporate interests.",
+        "Our team advocates for employees facing harassment or discrimination, ensuring they are protected under the law.",
     },
     {
       id: 3,
-      title: "Regulatory Compliance & Disputes:",
+      title: "Contract Drafting & Review:",
       description:
-        "Our team advises clients on regulatory matters and defends against enforcement actions and compliance disputes.",
+        "We assist employers with drafting and reviewing employment contracts, ensuring compliance with employment laws and protection of business interests.",
     },
     {
       id: 4,
-      title: "Commercial Transactions & Agreements: ",
+      title: "Labor Disputes & Negotiations:",
       description:
-        "We litigate cases related to mergers, acquisitions, and other business agreements, safeguarding your financial and legal position.",
+        "We represent clients in labor disputes, including wage claims, benefits disputes, and collective bargaining issues.",
     },
   ];
 
@@ -46,11 +46,11 @@ const Corporate = () => {
     <>
       <Navbar />
 
-      <div className="relative bg-[url('/criminal-litig.jpg')] bg-cover bg-center h-[50vh] content-center">
+      <div className="relative bg-[url('/employment-law.jpg')] bg-cover bg-center h-[50vh] content-center">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative flex justify-center">
           <h1 className="text-[#FFFFFF] text-5xl">
-            CORPORATE <span className="text-[#EFB34E]">LITIGATION</span>
+            EMPLOYMENT <span className="text-[#EFB34E]">LAW</span>
           </h1>
         </div>
       </div>
@@ -69,7 +69,7 @@ const Corporate = () => {
             </BreadcrumbItem>
             <DividerVerticalIcon />
             <BreadcrumbItem>
-              <BreadcrumbPage>Corporate Litigation</BreadcrumbPage>
+              <BreadcrumbPage>Employment Law</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
@@ -87,13 +87,12 @@ const Corporate = () => {
           <span className="font-bold text- text-[#800000]">
             June Kemboi Advocates
           </span>
-          , we offer comprehensive Corporate Litigation services to protect your
-          business interests in legal disputes. We work with companies of all
-          sizes, providing strategic representation and effective resolutions
-          for complex corporate matters.
+          , we offer comprehensive Employment Law services, providing employers
+          and employees with expert legal support in workplace disputes and
+          regulatory compliance matters.
         </p>
 
-        <p className="mt-10">Our Corporate Litigation Services include:</p>
+        <p className="mt-10">Our Employment Law Services include:</p>
 
         {reasons.map((reason) => (
           <div
@@ -114,13 +113,10 @@ const Corporate = () => {
 
         <div className="mt-5 mb-10">
           <p>
-            Our legal expertise ensures that your business is{" "}
-            <span className="text-[#800000] font-bold">well-represented</span>{" "}
-            in any {" "}
-            <span className="text-[#EFB34E] font-bold">
-              corporate litigation
-            </span>{" "}
-            matter.
+            Our team is dedicated to delivering{" "}
+            <span className="text-[#800000] font-bold">fair outcomes</span> and{" "}
+            <span className="text-[#800000] font-bold">protecting the rights</span>{" "}
+            of both employees and employers.
           </p>
         </div>
       </div>
@@ -130,4 +126,4 @@ const Corporate = () => {
   );
 };
 
-export default Corporate;
+export default Employment;

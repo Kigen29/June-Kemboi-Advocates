@@ -27,17 +27,17 @@ const Criminal = () => {
             description:"Our lawyers thoroughly analyze the evidence and circumstances of each case to develop effective defense strategies tailored to the client’s unique situation."
         },
         {
-            id: 1,
+            id: 3,
             title: "Pre-trial & Trial Advocacy:",
             description:"We handle all pre-trial procedures, including bail applications, plea negotiations, and evidence gathering. If the case proceeds to trial, we provide robust courtroom representation, aiming to secure the best possible outcome."
         },
         {
-            id: 1,
+            id: 4,
             title: "Appeals & Post-Conviction:",
             description:"For clients seeking to challenge a conviction or sentence, we offer appellate services, fighting for justice and rectification of any legal errors."
         },
         {
-            id: 1,
+            id: 5,
             title: "Consultation & Advisory:",
             description:"We offer consultations to advise clients on their rights, potential outcomes, and the legal processes involved in criminal cases."
         }
@@ -98,7 +98,7 @@ const Criminal = () => {
         
         
         {reasons.map((reason) => (
-        <div className="flex flex-row items-start space-x-2 ml-5 mt-1">
+        <div className="flex flex-row items-start space-x-2 ml-5 mt-1" key={reason.id}>
             <div className="mt-1">
                 <IoMdCheckboxOutline />
             </div>

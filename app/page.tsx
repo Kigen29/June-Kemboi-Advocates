@@ -40,7 +40,7 @@ export default function Home() {
     <>
       <div>
         <Navbar />
-        <section className="flex p-5">
+        <section className="flex p-5 h-[460px] items-center">
           <div className="flex flex-col gap-5 ml-24 mt-12">
             <h1 className="font-bold text-3xl">Your Trusted Legal Patner</h1>
             <p className="text-xl">

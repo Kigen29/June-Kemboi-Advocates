@@ -30,12 +30,12 @@ const serviceData = [
   {
     id: 2,
     image: family,
-    link: "/criminal-litigation",
+    link: "/family-law",
   },
   {
     id: 3,
     image: corporate,
-    link: "/criminal-litigation",
+    link: "/corporate-litigation",
   },
   {
     id: 4,

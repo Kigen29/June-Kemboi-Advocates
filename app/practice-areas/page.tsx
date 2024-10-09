@@ -50,7 +50,7 @@ const serviceData = [
   {
     id: 6,
     image: civil,
-    link: "/criminal-litigation",
+    link: "/civil-litigation",
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const serviceData = [
   {
     id: 8,
     image: land,
-    link: "/criminal-litigation",
+    link: "/land-disputes",
   },
   {
     id: 9,

@@ -100,9 +100,19 @@ export default function Footer() {
       </div>
 
       <div className="flex flex-col">
-        <MapProvider>
+        {/* <MapProvider>
           <MapComponent />
-        </MapProvider>
+        </MapProvider> */}
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8191010155374!2d36.81394867496566!3d-1.2823321987054765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d24eeafb23%3A0x1da7132c7598a8b0!2sMaendeleo%20House!5e0!3m2!1sen!2ske!4v1728468572700!5m2!1sen!2ske"
+          width="300"
+          height="300"
+          style={{border:0}}
+          
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
   );

@@ -55,7 +55,7 @@ const serviceData = [
   {
     id: 7,
     image: data,
-    link: "/criminal-litigation",
+    link: "/data-protection",
   },
   {
     id: 8,

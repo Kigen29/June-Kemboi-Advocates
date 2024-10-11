@@ -84,7 +84,7 @@ const Team = () => {
         </p>
       </div>
 
-      <section className="px-20 p-5 gap-20">
+      <section className="px-20 p-5 gap-20 bg-[#800000] bg-opacity-5">
         <h1 className="text-2xl font-bold text-[#800000]">Leadership</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-7">
           {leadershipData.map(({ id, image, link }) => (
@@ -105,7 +105,7 @@ const Team = () => {
         </div>
       </section>
 
-      <section className="px-20 p-5 gap-20">
+      <section className="px-20 p-5 gap-20 ">
         <h1 className="text-2xl font-bold text-[#800000]">Advocates</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-7">
           {advocatesData.map(({ id, image, link }) => (
@@ -125,6 +125,8 @@ const Team = () => {
           ))}
         </div>
       </section>
+
+      
 
       <Footer />
     </>

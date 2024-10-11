@@ -78,16 +78,14 @@ const Team = () => {
       </div>
 
       <div className="mt-5 mx-5">
-        <h3 className="text-2xl font-bold underline underline-offset-4 decoration-4">
-          Meet The Team
-        </h3>
+        <div className="text-2xl font-bold border-b-2 border-[#EFB34E] w-1/4 mt-1">Meet The Team</div>
         <p className="mt-2 text-lg text-justify p-3">
           At June Kemboi Advocates, we pride ourselves on having a dedicated team of experienced and skilled professionals who are passionate about providing high quality legal services. Our diverse team of advocates specializes in various fields, including criminal litigation, family law, and more, ensuring that each case is handled with the utmost care and expertise. We believe in a client-focused approach, working closely with individuals and businesses to deliver tailored solutions to meet their legal needs.
         </p>
       </div>
 
       <section className="px-20 p-5 gap-20">
-        <h1 className="text-2xl font-bold">Leadership</h1>
+        <h1 className="text-2xl font-bold text-[#800000]">Leadership</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-7">
           {leadershipData.map(({ id, image, link }) => (
             <div key={id} className="border-none m-0">
@@ -108,7 +106,7 @@ const Team = () => {
       </section>
 
       <section className="px-20 p-5 gap-20">
-        <h1 className="text-2xl font-bold">Advocates</h1>
+        <h1 className="text-2xl font-bold text-[#800000]">Advocates</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-7">
           {advocatesData.map(({ id, image, link }) => (
             <div key={id} className="border-none m-0">

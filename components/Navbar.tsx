@@ -5,6 +5,7 @@ import Link from "next/link";
 import logo from "@/components/images/Logo.png";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { AiFillHome } from "react-icons/ai";
 
 export default function Navbar() {
 
@@ -56,20 +57,21 @@ export default function Navbar() {
         <div
           className={`${
             isMenuOpen ? "block" : "hidden"
-          } lg:hidden absolute top-16 left-0 w-full bg-white shadow-md z-10`}
+          } lg:hidden absolute top-24 left-0 w-full bg-[#800000] shadow-md z-10`}
         >
-          <ul className="flex flex-col items-center space-y-4 py-4">
+          <ul className="flex flex-col space-y-4 py-4 items-baseline mx-10 text-[#FFFFFF]">
             {[
-              { name: "Home", href: "/" },
+              { name: "Home", href: "/"},
               { name: "About Us", href: "/about-us" },
               { name: "Our Team", href: "/team" },
               { name: "Practice Areas", href: "/practice-areas" },
               { name: "Contact", href: "/contact" },
             ].map((item, index) => (
               <li key={index}>
+               
                 <Link
                   href={item.href}
-                  className="block py-2 px-3 rounded hover:text-[#800000] relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#800000] after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:duration-300"
+                  className="block py-2 px-3 rounded hover:text-[#EFB34E] relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#EFB34E] after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:duration-300"
                   onClick={() => setIsMenuOpen(false)} // Close the menu when a link is clicked
                 >
                   {item.name}

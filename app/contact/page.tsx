@@ -27,7 +27,6 @@ import { useForm } from "react-hook-form";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -76,22 +75,20 @@ const Contact = () => {
   }, []);
 
   if (!isMounted) {
-    return null; // Avoid rendering problematic divs or forms until client-side rendering
+    return null;
   }
 
   return (
     <>
       <Navbar />
 
-      <div className="bg-[url('/Background.png')] bg-cover bg-center h-[50vh] content-center">
-        <div className="flex justify-center">
-          <h1 className="text-[#FFFFFF] text-5xl">
-            CONTACT <span className="text-[#EFB34E]">US</span>
-          </h1>
-        </div>
+      <div className="bg-[url('/Background.png')] bg-cover bg-center h-[40vh] flex justify-center items-center">
+        <h1 className="text-white text-4xl sm:text-5xl">
+          CONTACT <span className="text-[#EFB34E]">US</span>
+        </h1>
       </div>
 
-      <div className="mt-10 mx-5">
+      <div className="mt-5 mx-4 sm:mx-6 md:mx-10">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -105,65 +102,62 @@ const Contact = () => {
         </Breadcrumb>
       </div>
 
-      <div className="mt-5 mx-5">
-        <h3 className="text-2xl font-bold underline underline-offset-4 decoration-4">
+      <div className="mt-5 mx-4 sm:mx-6 md:mx-10">
+        <h3 className="text-xl sm:text-2xl font-bold underline underline-offset-4 decoration-4">
           Connect With Us
         </h3>
       </div>
 
-      <div className="mt-10 mb-20">
-        <div className="bg-[#800000] mx-5 rounded-md">
-          <div className="flex flex-row">
-            <div className="basis-1/2">
-              <div className="mt-6 ml-6 font-poppins">
-                <h1 className="text-[#FFFFFF] md:text-4xl text-2xl font-semibold ">
-                  LET'S WORK
-                </h1>
-                <h1 className="text-[#FFFFFF] md:text-4xl text-2xl md:mt-4 mt-2 font-semibold">
-                  ON SOMETHING <span className="text-[#EFB34E]">GREAT</span>
-                </h1>
-                <h1 className="text-[#FFFFFF] md:text-4xl text-2xl md:mt-4 mt-2 font-semibold">
-                  TOGETHER
-                </h1>
-              </div>
+      <div className="mt-8 mb-20 mx-4 sm:mx-6 md:mx-10">
+        <div className="bg-[#800000] rounded-lg p-6 sm:p-8">
+          <div className="flex flex-col md:flex-row">
+            {/* Contact Information Section */}
+            <div className="md:w-1/2 mb-6 md:mb-0">
+              <h1 className="text-white text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">
+                LET'S WORK ON SOMETHING{" "}
+                <span className="text-[#EFB34E]">GREAT</span> TOGETHER
+              </h1>
 
-              <div className="mt-20 ml-6 text-[#FFFFFF] mr-2 text-xs md:text-base">
-                <div className="flex flex-row items-center space-x-3">
+              <div className="text-white mt-8 space-y-4 text-sm sm:text-base">
+                <div className="flex items-center space-x-2">
                   <FaRegEnvelope />
                   <p>junekemboiadvocates@gmail.com</p>
                 </div>
-                <div className="flex flex-row items-center space-x-3 mt-2">
+                <div className="flex items-center space-x-2">
                   <FiPhone />
                   <p>+254 729 317 008</p>
                 </div>
               </div>
 
-              <div className=" mt-20 mb-3 ml-6 text-[#FFFFFF] flex flex-row items-center space-x-3">
-                <FaLinkedin />
-                <BsTwitterX />
-                <FaInstagram />
-                <FaFacebookSquare />
+              <div className="flex space-x-4 mt-8 text-white text-xl">
+                <FaLinkedin className="hover:scale-110 transition duration-300" />
+                <BsTwitterX className="hover:scale-110 transition duration-300" />
+                <FaInstagram className="hover:scale-110 transition duration-300" />
+                <FaFacebookSquare className="hover:scale-110 transition duration-300" />
               </div>
             </div>
 
-            <div className="bg-[#FFFFFF] mt-6 basis-1/2 mr-3 rounded-md mb-3">
-            <Toaster position="top-center" richColors />
+            {/* Contact Form */}
+            <div className="md:w-1/2 bg-white p-6 sm:p-8 rounded-lg shadow-md">
+              <Toaster position="top-center" richColors />
               <Form {...form}>
                 <form
                   onSubmit={form.handleSubmit(onSubmit)}
-                  className="space-y-8"
+                  className="space-y-6"
                 >
-                  {/* Username Field */}
+                  {/* Name Field */}
                   <FormField
                     control={form.control}
                     name="name"
-                    render={({ field }:any) => (
-                      <FormItem className="mt-2 mx-2 md:mx-5 md:mt-5">
-                        <FormLabel className="text-[#800000]">Your Name</FormLabel>
+                    render={({ field }: any) => (
+                      <FormItem>
+                        <FormLabel className="text-[#800000]">
+                          Your Name
+                        </FormLabel>
                         <FormControl>
                           <Input
                             placeholder="Enter your name"
-                            className="appearance-none border-2 border-[#423F3F] hover:border-[#800000] w-full py-2 px-3 text-[#800000] leading-tight focus:outline-none focus:shadow-outline"
+                            className="border-2 border-gray-400 focus:border-[#800000] w-full py-2 px-3 text-[#800000] leading-tight focus:outline-none focus:ring"
                             {...field}
                           />
                         </FormControl>
@@ -176,14 +170,16 @@ const Contact = () => {
                   <FormField
                     control={form.control}
                     name="email"
-                    render={({ field }:any) => (
-                      <FormItem className="mx-2 md:mx-5">
-                        <FormLabel className="text-[#800000]">Your Email</FormLabel>
+                    render={({ field }: any) => (
+                      <FormItem>
+                        <FormLabel className="text-[#800000]">
+                          Your Email
+                        </FormLabel>
                         <FormControl>
                           <Input
                             placeholder="Enter your email"
                             type="email"
-                            className="appearance-none border-2 border-[#423F3F] hover:border-[#800000] w-full py-2 px-3 text-[#800000] leading-tight focus:outline-none focus:shadow-outline"
+                            className="border-2 border-gray-400 focus:border-[#800000] w-full py-2 px-3 text-[#800000] leading-tight focus:outline-none focus:ring"
                             {...field}
                           />
                         </FormControl>
@@ -197,12 +193,14 @@ const Contact = () => {
                     control={form.control}
                     name="message"
                     render={({ field }: any) => (
-                      <FormItem className="mx-2 md:mx-5">
-                        <FormLabel className="text-[#800000]">Your Message</FormLabel>
+                      <FormItem>
+                        <FormLabel className="text-[#800000]">
+                          Your Message
+                        </FormLabel>
                         <FormControl>
                           <Textarea
                             placeholder="Type your message here"
-                            className="appearance-none border-2 border-[#423F3F] hover:border-[#800000] w-full py-2 px-3 text-[#800000] leading-tight focus:outline-none focus:shadow-outline"
+                            className="border-2 border-gray-400 focus:border-[#800000] w-full py-2 px-3 text-[#800000] leading-tight focus:outline-none focus:ring"
                             {...field}
                           />
                         </FormControl>
@@ -212,7 +210,7 @@ const Contact = () => {
                   />
 
                   {/* Submit Button */}
-                  <div className="flex justify-center pb-5">
+                  <div className="flex justify-center">
                     <SolidButtonForm>Submit</SolidButtonForm>
                   </div>
                 </form>

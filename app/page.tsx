@@ -117,7 +117,7 @@ export default function Home() {
                   <Image
                     src={image}
                     alt="Service image"
-                    className="w-full h-auto"
+                    className="w-full h-auto max-w-[250px] sm:max-w-[300px] md:max-w-[400px] lg:max-w-[500px] mx-auto"
                     width={300}
                     height={200}
                   />

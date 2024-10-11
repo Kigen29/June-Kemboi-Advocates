@@ -21,17 +21,17 @@ const serviceData = [
   {
     id: 2,
     image: employment,
-    link: "/family-law",
+    link: "/employment-law",
   },
   {
     id: 3,
     image: corporate,
-    link: "/corporate-law",
+    link: "/corporate-litigation",
   },
   {
     id: 4,
     image: land,
-    link: "/corporate-law",
+    link: "/land-disputes",
   },
 ];
 

@@ -19,6 +19,9 @@ import employment from "@/components/images/Employment.png";
 import land from "@/components/images/Land.png";
 import corporate from "@/components/images/Corporate.png";
 import data from "@/components/images/Data.png";
+import contracts from "@/components/images/Contract.png";
+import conveyancing from "@/components/images/Conveyancing.png";
+import commercial from "@/components/images/Commercial.png";
 import bankruptcy from "@/components/images/Bankruptcy.png";
 
 const serviceData = [
@@ -64,6 +67,21 @@ const serviceData = [
   },
   {
     id: 9,
+    image: contracts,
+    link: "/contracts",
+  },
+  {
+    id: 10,
+    image: conveyancing,
+    link: "/conveyancing",
+  },
+  {
+    id: 11,
+    image: commercial,
+    link: "/commercial-law",
+  },
+  {
+    id: 12,
     image: bankruptcy,
     link: "/bankruptcy",
   },
